@@ -1,0 +1,194 @@
+:root {
+    --main-color-1: hsl(222, 100%, 16%);
+    --main-color-2: hsl(230, 59%, 10%);
+    --main-color-3: hsl(20, 60%, 97%); 
+    --secondary-color-1: hsl(213, 93%, 24%);
+    --secondary-color-2: hsl(197, 80%, 35%);
+    --main-gradient: linear-gradient(143deg, #0a0f27,#001952,#043775,#12769e,#fcf6f3);                               
+    --secondary-gradient: linear-gradient(49deg, #001952,#12769e,#043775,#0a0f27);
+
+    --font-title: ; 
+    --main-font: ;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--main-color-2);
+    color: var(--main-color-3);
+}
+
+
+
+
+/* Navbar */
+.navbar {
+    height: 100vh;
+    width: 20%;
+    padding: 20px;
+    background-color: var(--main-color-1);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.navbar .logo h1 {
+    font-size: 3rem;
+    font-family: var(--font-title);
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-family: var(--main-font);
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.navbar .nav-links .navlink a{
+    text-decoration: none;
+    color: var(--main-color-3);
+    font-family: var(--main-font);
+    font-size: 2rem;
+}
+
+.navbar .nav-links .navlink {
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar .nav-links .navlink:hover {
+    transform: translateX(10%);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+
+
+
+/* section A propos */
+.s-a-propos {
+    height: 100vh;
+    width: 80%;
+    padding: 8%;
+    position: relative;
+    left: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.s-a-propos h2 {
+    font-family: var(--font-title);
+    font-size: 2.3rem;
+}
+
+.s-a-propos p {
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: var(--main-font);
+}
+
+
+
+/* section projets */
+.s-projets {
+    height: auto;
+    width: 80%;
+    position: relative;
+    left: 20%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+  
+  .box-projet-left {
+    height: 150px;
+    width: 80%;
+    position: relative;
+    background-color: var(--secondary-color-1);
+    border-radius: 0 20px 20px 0;
+    transition: transform 0.4s ease;
+  }
+  
+  .box-projet-right {
+    height: 150px;
+    width: 80%;
+    position: relative;
+    left: 20%;
+    background-color: var(--secondary-color-1);
+    border-radius: 20px 0 0 20px;
+    transition: transform 0.4s ease;
+  }
+  
+  /* Hover project-1 */
+  .s-projets:has(.project-1:hover) .project-1 {
+    transform: scaleY(1.5);
+  }
+  .s-projets:has(.project-1:hover) .project-2 {
+    transform: scaleY(0.5);
+  }
+  .s-projets:has(.project-1:hover) .project-3 {
+    transform: scaleY(0.5) translateY(-150px);
+  }
+  .s-projets:has(.project-1:hover) .project-4 {
+    transform: scaleY(0.5) translateY(-300px);
+  }
+  
+  /* Hover project-2 */
+  .s-projets:has(.project-2:hover) .project-2 {
+    transform: scaleY(1.5);
+  }
+  .s-projets:has(.project-2:hover) .project-1 {
+    transform: scaleY(0.5);
+  }
+  .s-projets:has(.project-2:hover) .project-3 {
+    transform: scaleY(0.5);
+  }
+  .s-projets:has(.project-2:hover) .project-4 {
+    transform: scaleY(0.5) translateY(-150px);
+  }
+  
+  /* Hover project-3 */
+  .s-projets:has(.project-3:hover) .project-3 {
+    transform: scaleY(1.5);
+  }
+  .s-projets:has(.project-3:hover) .project-2 {
+    transform: scaleY(0.5);
+  }
+  .s-projets:has(.project-3:hover) .project-4 {
+    transform: scaleY(0.5);
+  }
+  .s-projets:has(.project-3:hover) .project-1 {
+    transform: scaleY(0.5) translateY(150px);
+  }
+  
+  /* Hover project-4 */
+  .s-projets:has(.project-4:hover) .project-4 {
+    transform: scaleY(1.5);
+  }
+  .s-projets:has(.project-4:hover) .project-3 {
+    transform: scaleY(0.5);
+  }
+  .s-projets:has(.project-4:hover) .project-1 {
+    transform: scaleY(0.5) translateY(300px);
+  }
+  .s-projets:has(.project-4:hover) .project-2 {
+    transform: scaleY(0.5) translateY(150px);
+  }
+
+
+/* section expériences */
+/* section contatcs */
+
+/*footer*/

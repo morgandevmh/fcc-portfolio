@@ -17,8 +17,8 @@
 }
 
 body {
-    background-color: var(--main-color-2);
-    color: var(--main-color-3);
+    background-color: var(--main-color-3);
+    color: var(--main-color-1);
 }
 
 
@@ -41,6 +41,7 @@ body {
 .navbar .logo h1 {
     font-size: 3rem;
     font-family: var(--font-title);
+    color: var(--main-color-3);
 }
 
 .navbar .logo {
@@ -76,7 +77,7 @@ body {
 
 /* section A propos */
 .s-a-propos {
-    height: 100vh;
+    height: auto;
     width: 80%;
     padding: 8%;
     position: relative;
@@ -108,87 +109,74 @@ body {
     position: relative;
     left: 20%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
-    flex-direction: column;
+    
+    flex-wrap: wrap;
   }
   
   .box-projet-left {
-    height: 150px;
-    width: 80%;
-    position: relative;
+    height: 250px;
+    width: 48%;
     background-color: var(--secondary-color-1);
+    border: solid 2px var(--main-color-2);
     border-radius: 0 20px 20px 0;
-    transition: transform 0.4s ease;
+    transition: transform 0.3s ease-in-out;
   }
   
   .box-projet-right {
-    height: 150px;
-    width: 80%;
-    position: relative;
-    left: 20%;
+    height: 250px;
+    width: 48%;
     background-color: var(--secondary-color-1);
+    border: solid 2px var(--main-color-2);
     border-radius: 20px 0 0 20px;
-    transition: transform 0.4s ease;
-  }
-  
-  /* Hover project-1 */
-  .s-projets:has(.project-1:hover) .project-1 {
-    transform: scaleY(1.5);
-  }
-  .s-projets:has(.project-1:hover) .project-2 {
-    transform: scaleY(0.5);
-  }
-  .s-projets:has(.project-1:hover) .project-3 {
-    transform: scaleY(0.5) translateY(-150px);
-  }
-  .s-projets:has(.project-1:hover) .project-4 {
-    transform: scaleY(0.5) translateY(-300px);
-  }
-  
-  /* Hover project-2 */
-  .s-projets:has(.project-2:hover) .project-2 {
-    transform: scaleY(1.5);
-  }
-  .s-projets:has(.project-2:hover) .project-1 {
-    transform: scaleY(0.5);
-  }
-  .s-projets:has(.project-2:hover) .project-3 {
-    transform: scaleY(0.5);
-  }
-  .s-projets:has(.project-2:hover) .project-4 {
-    transform: scaleY(0.5) translateY(-150px);
-  }
-  
-  /* Hover project-3 */
-  .s-projets:has(.project-3:hover) .project-3 {
-    transform: scaleY(1.5);
-  }
-  .s-projets:has(.project-3:hover) .project-2 {
-    transform: scaleY(0.5);
-  }
-  .s-projets:has(.project-3:hover) .project-4 {
-    transform: scaleY(0.5);
-  }
-  .s-projets:has(.project-3:hover) .project-1 {
-    transform: scaleY(0.5) translateY(150px);
-  }
-  
-  /* Hover project-4 */
-  .s-projets:has(.project-4:hover) .project-4 {
-    transform: scaleY(1.5);
-  }
-  .s-projets:has(.project-4:hover) .project-3 {
-    transform: scaleY(0.5);
-  }
-  .s-projets:has(.project-4:hover) .project-1 {
-    transform: scaleY(0.5) translateY(300px);
-  }
-  .s-projets:has(.project-4:hover) .project-2 {
-    transform: scaleY(0.5) translateY(150px);
+    transition: transform 0.3s ease-in-out;
   }
 
+
+.project-1 {
+    transform-origin: top left;
+}
+.project-2 {
+    transform-origin: top right;
+}
+.project-3 {
+    transform-origin: bottom left;
+}
+.project-4 {
+    transform-origin: bottom right;
+}
+
+.project-1:hover, .project-2:hover, .project-3:hover, .project-4:hover  {
+    transform: scale(1.5, 1.5);
+}
+
+.s-projets:has(.project-1:hover) .project-2{transform: scaleX(0.5);}
+.s-projets:has(.project-1:hover) .project-3{transform: scaleY(0.5);} /*
+.s-projets:has(.project-1:hover) .project-4{transform: scale(0.5, 1);} */
+
+.s-projets:has(.project-2:hover) .project-1{transform: scaleX(0.5);}/*
+.s-projets:has(.project-2:hover) .project-3{transform: scale(0.5);} */
+.s-projets:has(.project-2:hover) .project-4{transform: scaleY(0.5);}
+
+.s-projets:has(.project-3:hover) .project-4{transform: scaleX(0.5);}
+.s-projets:has(.project-3:hover) .project-1{transform: scaleY(0.5);} /*
+.s-projets:has(.project-3:hover) .project-2{transform: scale(0.5);} */
+
+.s-projets:has(.project-4:hover) .project-3{transform: scaleX(0.5);}
+.s-projets:has(.project-4:hover) .project-2{transform: scaleY(0.5);} /*
+.s-projets:has(.project-4:hover) .project-1{transform: scale(0.5);} */
+
+
+  
 
 /* section expériences */
+
+
+
+
+
 /* section contatcs */
 
 /*footer*/

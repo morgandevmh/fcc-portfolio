@@ -112,7 +112,6 @@ body {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    
     flex-wrap: wrap;
   }
   
@@ -172,6 +171,62 @@ body {
   
 
 /* section expériences */
+.s-experiences {
+    height: auto;
+    width: 80%;
+    position: relative;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.content-area {
+    height: 380px;
+    width: 100%;  /*
+    border: solid 3px #12769e; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.ca1, .ca3 {
+    flex-direction: row-reverse;
+}
+
+.img-exp {
+    height: 300px;
+    width: 600px;
+    object-fit: cover;
+}
+
+.zone-text-1 {
+    height: 300px;
+    width: 500px; /*
+    border: solid 3px #043775; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.zt1l {
+    position: relative;
+    left: 8%;
+}
+
+.zt1r {
+    position: relative;
+    right: 8%;
+    align-items: end;
+}
+
+.zone-text-1 p {
+    background-color: rgb(208, 206, 206);
+    padding: 20px;
+
+}
 
 
 

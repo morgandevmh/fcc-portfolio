@@ -1,2 +1,2 @@
-# fco-portfolio
+# fcc-portfolio
 Last certification project on freecodecamp 
